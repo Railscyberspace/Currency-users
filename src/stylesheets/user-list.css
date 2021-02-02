@@ -1,0 +1,99 @@
+.user-list-wrap {
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px 5px 15px 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: -1px 0px 20px 0px hsla(0, 0%, 44%, 0.3);
+}
+
+.user-list-wrap .user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.user-list-wrap .user-info .user-pay,
+.user-list-wrap .user-info .user-personal {
+  flex: 1;
+}
+.user-list-wrap .user-info .user-personal {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.user-list-wrap .user-info .userName,
+.user-list-wrap .user-info .name {
+  font-size: 18px;
+  color: var(--veryDarkBlue);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.user-list-wrap .user-info .name span {
+  margin-left: 8px;
+}
+.user-list-wrap .user-info .address {
+  font-style: italic;
+  color: var(--darkGray);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.user-list-wrap .user-info .payment,
+.user-list-wrap .user-info .credit-card {
+  color: var(--darkGray);
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.user-list-wrap .user-info .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--darkGray);
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 4px;
+}
+.user-list-wrap .user-info .contact a {
+  display: block;
+  color: var(--darkGray);
+  font-weight: 500;
+}
+.user-list-wrap .user-info .contact a:hover {
+  color: var(--Cyan);
+}
+.user-list-wrap .user-info .contact i {
+  margin-top: 4px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+.user-list-wrap .user-info .contact .email {
+  display: flex;
+  margin-bottom: 10px;
+  color: var(--Cyan);
+}
+.user-list-wrap .user-info .contact .number {
+  display: flex;
+  color: var(--Cyan);
+}
+
+/* mobile */
+@media only screen and (max-width: 750px) {
+  .user-list-wrap .user-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .user-list-wrap .user-info .user-pay {
+    margin-top: 5vh;
+  }
+  .user-list-wrap .user-info .contact {
+    justify-content: center;
+    align-items: center;
+  }
+}

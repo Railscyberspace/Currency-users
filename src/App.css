@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  background: var(--veryDarkBlue);
+
+  height: auto;
+
+  color: var(--lightFont);
+}
+
+.container .query-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.container .query-wrap p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--lightFont);
+  opacity: 0.5;
+  font-weight: 200;
+}
+.welcome-text .hello {
+  font-size: 30px;
+  color: var(--lightFont);
+  font-weight: 100;
+  display: inline-block;
+}
+.welcome-text span {
+  font-weight: 700;
+  opacity: 1;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.container .view-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightBg);
+  border-radius: 20px;
+  border: 1px solid var(--gray);
+  padding: 5%;
+}
+.view-wrap .filter-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--veryDarkBlue);
+}
+.view-wrap p {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 14px;
+}
+.view-wrap .filter-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.view-wrap .filter-wrap .find,
+.view-wrap .filter-wrap .country-select {
+  background-color: hsla(233, 17%, 28%, 0.1);
+  border-radius: 20px;
+  height: 5vh;
+}
+.view-wrap .filter-wrap .find {
+  display: flex;
+  padding: 10px 3px 2px 15px;
+}
+.view-wrap .filter-wrap .find .icon {
+  color: var(--darkGray);
+}
+.view-wrap .filter-wrap .find input {
+  background-color: hsla(233, 17%, 28%, 0);
+  margin-left: 10px;
+  font-size: 14px;
+}
+.view-wrap .filter-wrap .country-select {
+  display: flex;
+  padding: 6px 15px 6px 15px;
+}
+.view-wrap .filter-wrap .country-select select {
+  background-color: hsla(233, 17%, 28%, 0);
+  font-size: 14px;
+}
+.view-wrap .filter-wrap .show-country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-wrap .filter-wrap .show-country .toggle {
+  background-color: var(--Cyan);
+  border-radius: 20px;
+  width: 60px;
+  height: 25px;
+  padding: 4px 4px 0 4px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.view-wrap .filter-wrap .show-country .toggle button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.view-wrap .filter-wrap .show-country .text {
+  font-size: 12px;
+}
+/* mobile */
+@media only screen and (max-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: var(--veryDarkBlue);
+  }
+  .container .query-wrap {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .container .query-wrap .welcome-text {
+    text-align: center;
+  }
+  .container .view-wrap {
+    margin-top: 10%;
+  }
+  .view-wrap .filter-wrap {
+    flex-direction: column;
+  }
+  .view-wrap .filter-wrap .find {
+    margin-right: 0;
+  }
+  .view-wrap .filter-wrap .find,
+  .view-wrap .filter-wrap .country-select {
+    margin-bottom: 4%;
+  }
+}
